@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora com JavaScript</title>
+	<script type="text/javascript" src="scripts/my_script_24.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/my_css_24.css">
+</head>
+<body >
+	<h3>Calculadora muito simples!!!</h3>
+	<br>
+<div class="borda">
+	<form name="calc"> <!--(form name=)-->
+		<input type="text" id="visor" class="visor">
+		<br>
+		<input class="limpar" type="button" value="C" onclick="limpaVisor();">
+		<br>
+		<input class="numero" type="button" value="7" onclick="meuVisor(this.value);">
+		<input class="numero" type="button" value="8" onclick="meuVisor(this.value);"> 
+		<input class="numero" type="button" value="9" onclick="meuVisor(this.value);">
+		<input class="numero" type="button" value="/" onclick="meuVisor(this.value);">
+		<br>
+		<input class="numero" type="button" value="4" onclick="meuVisor(this.value);">
+		<input class="numero" type="button" value="5" onclick="meuVisor(this.value);">
+		<input class="numero" type="button" value="6" onclick="meuVisor(this.value);" >
+		<input class="numero" type="button" value="*" onclick="meuVisor(this.value);">
+		<br>
+		<input class="numero" type="button" value="1" onclick="meuVisor(this.value);">
+		<input class="numero" type="button" value="2" onclick="meuVisor(this.value);">
+		<input class="numero" type="button" value="3" onclick="meuVisor(this.value);">
+		<input class="numero" type="button" value="-" onclick="meuVisor(this.value);">
+		<br>
+		<input class="numero" type="button" value="0" onclick="meuVisor(this.value);">
+		<input class="numero" type="button" value="+" onclick="meuVisor(this.value);">
+		<input class="numero" type="button" value="," onclick="meuVisor(this.value);">
+		<input class="numero" type="button" value="%" onclick="meuVisor(this.value);">
+		<br>
+		<input class="calculo" type="button" value="=" onclick="calcular();">
+	</form>
+</div>		
+	<!--(type="button") é a função de clik-->
+	<!--O que colocamos na value aparece na tela (value=(""))-->
+	<!--(this.value)leva o valor para javascript-->
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Operações com Confirm em JavaScript</title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+function redirecionar(hotmail){
+	if(confirm("Deseja acessar o login do hotmail?")){
+		window.location=hotmail;
+	}
+}
+	
+
+function redirecionar(uol){ uol="https://www.uol.com.br/"
+	if(confirm("Deseja acessar o login da Uol?")){
+		window.location=uol;
+	}
+}	
+
+/* caminha  universal, para acessar site diferentes*/
+function redirecionar(pagina,dominio){ 
+	if(confirm("Deseja acessar o login do "+dominio+"?")){
+		window.location=pagina;
+	}
+}	
+
+</script>
+</head>
+<body>
+<!--colocar aspas simples em argumento que deseja, dentro de outro argumento com aspas duplas-->
+
+<a href="#" onclick="redirecionar('https://login.live.com/');">Acessar o login do Hotmail</a>
+
+<br>
+<br>
+
+<a href="#" onclick="redirecionar('https://www.uol.com.br/');">Acessar o login da Uol</a>
+
+<br>
+<br>
+
+<!-- Com o caminho universal, conseguimos colocar dois links diferente-->
+<a href="#" onclick="redirecionar('https://www.globo.com','globo');">Acessar o login do Globo</a>
+
+<br>
+
+<a href="#" onclick="redirecionar('https://www.ig.com.br/','ig');">Acessar o login do IG</a>
+</body>
+</html>

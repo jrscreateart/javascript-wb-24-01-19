@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Operações de interação com JavaScript</title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+var nome;
+var voltas = 0;
+var tentativas = 4;
+do {
+	if (voltas == 0){
+		nome = prompt ("Qual é o seu nome?");
+		voltas++;
+	} else {
+		nome = prompt ("Por favor, preciso saber o seu nome.");
+		voltas++;
+		if(voltas == tentativas && nome == ""){
+			alert ("Que pena! eu gostaria de conhecer você.");
+			break;
+		}
+	}
+} while (nome == null || nome == "");
+if (nome != ""){
+	alert ("Olá "+nome+"! é uma satisfação conhecer você.");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+*{
+	margin: 0; 
+	padding: 0;
+	box-sizing: boder-box; /*Quando se usar o (*), significar pega tudo e colocar formatação geral*/
+}
+
+body{
+	background-color:pink;
+	text-align:center;
+	font-family: 'Sniglet', cursive;
+	}
+
+.visor{
+	width: 208px;
+	border-radius:3px;
+	border-color:palevioletred;
+	font-family: 'Sniglet', cursive;
+	box-sizing: boder-box;
+}
+
+.limpar{
+	width:213px;
+	border-radius:3px;
+	border-color:palevioletred;
+	font-family: 'Sniglet', cursive;
+	font:30px; /*Para tamanho*/
+	box-sizing: boder-box;
+}
+
+.calculo{
+	width:213px;
+	border-radius:3px; 
+	border-color:palevioletred; /*cor da borda*/
+	font-family: 'Sniglet', cursive;
+	font:30px; /*Para tamanho*/
+	box-sizing: boder-box;
+}
+ 
+.numero{
+	width: 50px;
+	border-radius:3px;
+	border-color:palevioletred;
+	font-family: 'Sniglet', cursive;
+	box-sizing: boder-box;
+} 
+
+
+
+
+.borda{
+	border:solid 2px hotpink; 
+	border-radius:10px;         
+	padding:10px;
+	box-sizing: boder-box;
+	width:230px;
+	margin: 0 auto;
+	}
+

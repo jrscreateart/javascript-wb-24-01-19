@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Instruções de Controle com JavaScript</title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+
+//Instruções de Controle de rotina break
+for(var num=1;num<=1000;num++){
+	document.write(num+" ");
+	if(num==20) {
+		break; //BREAK ele é para parar o laço
+	}
+}
+
+					//ATENÇÃO INFORMAÇÕES 
+	/*WHILE(comparação){código que será executado}
+	continue; */
+	/*DO{código que será executado}
+	while(comparação);
+	continue;*/
+	/*FOR(valor inicial; comparação; modificação do valor){código que será executado};
+	continue;*/
+document.write("<br>")
+
+//Operação da brincacdeira do pin
+for(var nr=1;nr<=20;nr++){
+// O exercicio é  permite que todos multiplos de 4 não aparecer e colocar o pin.
+// Mais 
+	if(nr%4==0){
+		document.write("pin"); 
+		document.write("<br>");
+		// Deixando sem o comando "continue"  não havera o corte de linha e o processo e igorado.
+		continue;
+		//ignore os códigos abaixo e continua o laço
+		/*Ao colocar o comando  "continue", ignoro as linhas de instruções que estão abaixo dele.
+		Informo para ele voltar para o "for" e da continuidade no laço,  em todo o processso sem parar. */
+	}
+		document.write(nr);
+		document.write("<br>");
+}
+</script>
+</body>
+</html>

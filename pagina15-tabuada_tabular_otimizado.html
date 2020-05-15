@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Instruções de controle com JavaScript</title>
+	<style type="text/css">
+	body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	}
+	table {
+	background-color: rgb(204,204,204);
+	}
+	td {
+	width: 30px;
+	text-align: center;
+	}
+	</style>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+<!-- Operação de repetição for para Tabuada otimizado -->
+var numero;
+var tabuada;
+	tabuada = prompt("Qual tabuada deseja?");
+	document.write ("<center>");
+	document.write ("<p>Esta é a tabuada do "+tabuada+" feita com JavaScript</p>");
+	document.write ("<table>");
+	for (numero=1; numero<=10; numero++) {
+		document.write ("<tr>");
+		document.write ("<td>"+tabuada+"</td>");
+		document.write ("<td>x</td>");
+		document.write ("<td>"+numero+"</td>");
+		document.write ("<td>=</td>");
+		document.write ("<td>"+tabuada*numero+"</td>");
+		document.write ("</tr>");
+	}
+	document.write ("</table>");
+	document.write ("</center>");
+</script>
+</body>
+</html>

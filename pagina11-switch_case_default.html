@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Instruções de controle com JavaScript</title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+//Selecione o nome do mês de acordo com o mês do computador
+	
+	document.write("Estamos no mês de ");
+	
+	var hoje= new Date(); //Objeto "New Date" é um codigo que busca diretamente a data do mês. Função do javascript.
+	var mes= hoje.getMonth()+1;/* Metodo *getMonth* é a estrutura do javascript que busca o mês atual no computador, ao
+	colocar o sinal de "+"  faz com que seja feito a busca do mês especifico com o uso de mais "1". Então:
+	 mês de Fevereiro  é  mês 2, colocando o "+1" ele busca o mes correto*/
+	switch (mes){ // (variavel= mes) faz com que, pule os outros meses e procura o mês atual.Nisso ele meio que vira numero.
+case 1:
+		document.write("Janeiro");
+		break;
+case 2:
+		document.write("Fevereiro");
+		break;
+case 3:
+		document.write("Março");
+		break;
+case 4:
+		document.write("Abril");
+		break;
+case 5:
+		document.write("Maio");
+		break;
+case 6:
+		document.write("Junho");
+		break;
+case 7:
+		document.write("Julho");
+		break;
+case 8:
+		document.write("Agosto");
+		break;
+case 9:
+		document.write("Outubro");
+		break;
+case 10:
+		document.write("Setembro");
+		break;
+case 11:
+		document.write("Novembro");
+		break;
+case 12:
+		document.write("Dezembro");
+		break;
+default:
+	//se não for nenhum dos cases acima, então: 
+	document.write("Ops!mês não encontrado");
+	}
+/*
+switch(variável){
+case valor:1
+}
+codigo a executar caso seja valor 1;
+break
+case valor2:
+codigo a executar caso seja valor 2;
+break
+case valor3:
+codigo a executar caso seja valor 3;
+break
+case valor4:
+codigo a executar caso seja valor 4; */
+
+</script>
+</body>
+</html>
